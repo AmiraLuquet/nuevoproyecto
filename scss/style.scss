@@ -1,18 +1,17 @@
-*{
-    margin-top: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-$font-family-base: 'Montserrat', sans-serif;
-$primary: black;
-$body-bg: black;
-
-
-
-
-
-
-
+$primary: #6415e5;
+$navbar-light-hover-color: rgba(blue, .7);
+$navbar-light-active-color:rgba(violet, .9);
+$navbar-light-toggler-icon-bg:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#6415e5' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-color:rgba(blue, .55);
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+@import "mixin";
+@import "generales";
+@import "header";
+@import "footer";
+@import "secciones";
+@import "media768px";
+
+.custom-toggler.navbar-toggler {
+    color: #6415e5;
+}

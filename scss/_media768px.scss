@@ -1,0 +1,36 @@
+@media (min-width:768px){
+    .area-grid{
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 150px auto 200px;
+      grid-template-columns: 150px auto 150px;
+      grid-template-areas: 
+      "header header header"
+      "section section section"
+      "footer footer footer";
+    }
+    header{
+      grid-area: header;
+    }
+    section{
+      grid-area: section;
+      display: flex;
+      flex-direction: row;
+      
+    }
+
+    footer{
+      grid-area: footer ;
+    }
+    .footer__redes{
+      width: 50%;
+    }
+    .footer__cosas{
+      margin-top: 70px;
+    }
+
+
+
+
+
+  }

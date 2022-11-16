@@ -1,0 +1,496 @@
+/**************SECCIONES,CONTENEDORES, CARDS, FORMS*************/
+@import "variables";
+section{
+  grid-area: section;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h1{
+  color: map-get($colors, color-cian );
+  font-size: 35px;
+  display: flex;
+  margin-top: 4%;
+  justify-content: center;
+
+}
+
+  ////////////////////*FORM DE INICIO ,REGISTRO Y AYUDA*/////////////////////////////////
+.form-box2{
+  width: 380px;
+  height: 500px;
+  position: relative;
+  margin: 15% auto;
+  background-image: url(../img/caja1.svg);
+  padding: 5px;
+  overflow: hidden;
+}
+.button2-box{
+  width: 300px;
+  margin: 25px auto;
+  position: relative;
+  border-radius: 30px;
+}
+.toggle2-btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn2{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to right, map-get($colors , color-pink ), map-get($colors , color-purple ));
+  border-radius: 30px;
+  transition: .5s;
+}
+.social-icons{
+  margin: 30px auto;
+  text-align: center;
+    img{
+      width: 30px;
+      margin: 0 15px;
+      cursor: pointer;
+    }
+}
+.input-group2{
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+  margin-left: 4%;
+}
+.input-group3{
+  top: 100px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+  margin-left: 4%;
+    h1{
+      -webkit-text-fill-color: map-get($colors , color-cian );
+      -webkit-text-stroke: 1px black;
+    }
+}
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submit-btn2{
+  border-radius: 50px;
+  width: 150px;
+  padding: 10px 10px;
+  cursor: pointer;
+  display: block;
+  margin-top: 0%;
+  background: linear-gradient(to right, map-get($colors , color-pink ), map-get($colors , color-purple ));
+  border: 0;
+  outline: none;
+}
+.submit-btn3{
+  border-radius: 50px;
+  width: 150px;
+  padding: 10px 10px;
+  cursor: pointer;
+  display: block;
+  margin-top: 10%;
+  background: linear-gradient(to right, map-get($colors , color-pink ), map-get($colors , color-purple ));
+  border: 0;
+  outline: none;
+}
+.check-box{
+  margin: 20px 10px 30px 0;
+}
+#span2{
+  color: black;
+  text-shadow: 2px 2px 8px white;
+  font-size: 12px;
+  left: 20px;
+  bottom: 75px;
+  position: absolute;
+}
+#register{
+  left: 450px;
+}
+  ////////////////////*FIN FORM DE INICIO ,REGISTRO Y AYUDA*/////////////////////////////////
+  
+
+
+  ////////////////////*SECCION MUSICA, PELICULAS Y ARTE*/////////////////////////////////
+.musica{
+  display: none;
+}
+.peliculas{
+  @extend .musica;
+}
+.arte{
+  @extend .musica;
+}
+  ////////////////////* FIN SECCION MUSICA, PELICULAS Y ARTE*/////////////////////////////////
+
+
+  ////////////////////*CONTENEDOR DE PAGINA DE INCIO*/////////////////////////////////
+.container2{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.background-img{
+  background-image: url("../img/caja1.svg");
+  height: 400px;
+  width: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15% auto;
+  padding:20px;
+  border: 1px solid map-get($colors , color-azulado );
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px map-get($colors , color-azulado );
+  position: relative;
+}
+.content h2{ font-size:19px;}
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: map-get($colors, color3 );
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid map-get($colors , color-azulado );
+  color: map-get($colors , color-blanco );
+  padding: 20px;
+}
+.box:before{
+  content: '';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: map-get($colors , color-azulado );
+  transition:0.5s;
+  pointer-events: none;
+}
+.box:hover:before{
+  left:-50%;
+  transform: skewX(-5deg);
+}
+.box .content{
+  position:absolute;
+  top:15px;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  border:1px solid map-get($colors , color4);
+  padding:20px;
+  text-align:center;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+  
+}
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  
+}
+.box span:nth-child(1)
+{
+  transform:rotate(0deg);
+}
+.box span:nth-child(2)
+{
+  transform:rotate(90deg);
+}
+.box span:nth-child(3)
+{
+  transform:rotate(180deg);
+}
+.box span:nth-child(4)
+{
+  transform:rotate(270deg);
+}
+.box span:before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 2px;
+  background: map-get($colors , color-cian);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+    
+  }
+  
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+  }
+  
+} 
+  ////////////////////*FIN CONTENEDOR DE PAGINA DE INCIO*/////////////////////////////////
+
+
+   ////////////////////*PALABRAS EN NEON*/////////////////////////////////
+  @font-face {
+    font-family: neon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+  }
+  
+  .container3 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .neon {
+    font-family: neon;
+    color: #FB4264;
+    font-size: 6vw;
+    line-height: 6vw;
+    text-shadow: 0 0 3vw #F40A35;
+  }
+  
+  .flux {
+    font-family: neon;
+    color: #426DFB;
+    font-size: 6vw;
+    line-height: 6vw;
+    text-shadow: 0 0 3vw #2356FF;
+  }
+  
+  .neon {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+  }
+  
+  @keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+      color: #FED128;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+      color: #806914;
+    }
+  }
+  
+  .flux {
+    animation: flux 2s linear infinite;
+    -moz-animation: flux 2s linear infinite;
+    -webkit-animation: flux 2s linear infinite;
+    -o-animation: flux 2s linear infinite;
+  }
+  
+  @keyframes flux {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+      color: #28D7FE;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+      color: #146C80;
+    }
+  }
+  ////////////////////* FIN PALABRAS EN NEON*/////////////////////////////////
+
+
+
+    ////////////////////*CARDS CONTENIDO*/////////////////////////////////
+  .a-box {
+    margin-top: 50px;
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+  }
+  
+  .img-container {
+      height: 400px;
+      width: 320px;
+      overflow: hidden;
+      border-radius: 20px 20px 20px 20px;
+      display: inline-block;
+  }
+  
+  .img-container img {
+      height: 70%;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+    
+  }
+  
+  .text-container {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 120px 20px 20px 20px;
+    border-radius: 20px;
+    background: map-get($colors, color-blanco );
+    margin: -120px 0px 0px 0px;
+    line-height: 19px;
+    font-size: 14px;
+  }
+  
+  .text-container{
+      h3{
+        margin: 20px 0px 10px 0px;
+        font-size: 20px;
+        -webkit-text-fill-color: map-get($colors , color-cian );
+        -webkit-text-stroke: 1px black;
+      }
+
+  }
+ ////////////////////*FIN CARDS CONTENIDO*/////////////////////////////////
+
+
+
+
+////////////////////*ORGANIZACION CONTENIDO*/////////////////////////////////
+
+  .container3{
+    width: 100%;
+  }
+  .container4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center
+  }
+  .contenido2{
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center
+  }
+
+  #section-contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom:50px ;
+  }
+////////////////////*FIN ORGANIZACION CONTENIDO*/////////////////////////////////
+/// 
+.card{
+  justify-content: space-around;
+}
+.shop-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+h1:hover{
+  cursor: pointer;
+}
+
+.modal-container{
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: #fff;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar{
+  display: none;
+}
+.modal-header{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: #fff;
+}
+.modal-header-title{
+  justify-content: flex-start;
+}
+
+.modal-header-button{
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+.modal-container > .modal-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+}
+
+.modal-container > div >img {
+  height: 120px;
+  width: 120px;
+}
+
+.total-content{
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.delete-product{
+  cursor: pointer;
+}
+
+.cantidad-carrito{
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 34px;
+  position: absolute;
+  display: none;
+}
