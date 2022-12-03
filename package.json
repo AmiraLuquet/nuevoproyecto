@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/AmiraLuquet/idea-luquetamira#readme",
   "dependencies": {
-    "bootstrap": "^5.2.1"
+    "bootstrap": "^5.2.1",
+    "sweetalert": "^2.1.2"
   },
-  "devDependencies": {},
   "description": ""
 }

@@ -7,6 +7,7 @@
       grid-template-areas: 
       "header header header"
       "section section section"
+      "otro otro otro"
       "footer footer footer";
     }
     header{
@@ -18,7 +19,9 @@
       flex-direction: row;
       
     }
-
+    .botonnuevo{
+      grid-area: otro;
+    }
     footer{
       grid-area: footer ;
     }

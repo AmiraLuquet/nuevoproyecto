@@ -10879,6 +10879,11 @@ h2, .h2 {
   margin-left: 40%;
 }
 
+.botonnuevo {
+  margin-left: 50%;
+  height: 150px;
+}
+
 header {
   grid-area: header;
 }
@@ -11406,7 +11411,7 @@ h1:hover, .h1:hover {
     display: grid;
     grid-template-rows: 150px auto 200px;
     grid-template-columns: 150px auto 150px;
-    grid-template-areas: "header header header" "section section section" "footer footer footer";
+    grid-template-areas: "header header header" "section section section" "otro otro otro" "footer footer footer";
   }
   header {
     grid-area: header;
@@ -11415,6 +11420,9 @@ h1:hover, .h1:hover {
     grid-area: section;
     display: flex;
     flex-direction: row;
+  }
+  .botonnuevo {
+    grid-area: otro;
   }
   footer {
     grid-area: footer;
